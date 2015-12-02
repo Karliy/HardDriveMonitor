@@ -137,7 +137,7 @@ if __name__ == '__main__':
 		exit()
 
 	print os.popen('cat '+LOGFILE).read()
-	if ERROR_TAG==0:
+	if ERROR_TAG==1:
 		if send_mail(mail_from,mail_to,"服务器磁盘检查告警邮件",os.popen('cat '+LOGFILE).read()):
 			print 'Mail Send Success!'
 		else:
