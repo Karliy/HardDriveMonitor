@@ -100,7 +100,7 @@ if __name__ == '__main__':
 	file.write("IP Address:"+'\n')
 	file.write(os.popen("/sbin/ifconfig|grep 'inet addr'").read())
 	file.close()
-'''eg：
+"""eg：
 	mail_from='report@126.com'
 	mail_to=['abc@126.com','cde@163.com']
 	mail_smtp_server="smtp.126.com"
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 	login_mail_passwd="4yRmcn1fMBq"
 	login_mail_postfix="126.com"
 	lspci_info=os.popen("/sbin/lspci").read()
-'''
+"""
 	mail_from=''
 	mail_to=['','']
 	mail_smtp_server=""
